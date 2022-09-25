@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+#container {
+  margin: 50px;
+  background-color: rgb(237, 163, 52);
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+form {
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  border: 5px;
+  padding: 10px 20px;
+  border: 3px solid rgba(27, 31, 35, .15);
+  background-color: rgb(130, 67, 15);
+  border-radius: 12px;
+  border-color: rgb(79, 53, 19);
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button:hover {
+  background-color: rgb(203, 75, 171);
 }
 
-.App-link {
-  color: #61dafb;
+label {
+  font-size: large;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input, output {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background-color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+output {
+  background-color: #ccc;
+}
+
+h1 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 30px;
+}
+
+/* Remove arrows/spinners from Chrome/Edge/Opera/Safari */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Remove arrows/spinners from Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
